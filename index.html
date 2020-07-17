@@ -26,29 +26,80 @@
           <!-- Navbar -->
           <nav class="navbar">
             <!-- Brand -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
               <img class="img-fluid" src="images/HarfeHonari-Logo.svg" 
               alt="Harfe Honari Logo" width="40" height="40">
               حرف هنری
             </a>
-            <!-- Profile -->
-            <a href="#">
-              <img class="avatar" src="images/avatar.jpg" alt="profile avatar" width="40" height="40">
-            </a>
           </nav>
         </div>
+
         <!-- Menu -->
         <div class="col-12 navbar menu">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">ورود</a>
+              <a class="nav-link" data-toggle="modal" data-target="#signInModal" href="#">ورود</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ثبت نام</a>
+              <a class="nav-link" data-toggle="modal" data-target="#signUpModal" href="#">ثبت نام</a>
             </li>
           </ul>
         </div>
       </div>
+
+      <!-- Modals-->
+      <!-- Signin modal -->
+      <div class="modal fade" id="signInModal" 
+      tabindex="-1" role="dialog" aria-labelledby="signIn" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signIn">ورود</h5>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="signinEmail" 
+                   placeholder="ایمیل">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="signinPassword" placeholder="کلمه ی عبور">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="checkStaySignin">
+                  <label class="form-check-label mr-4" for="checkStaySignin">به خاطر بسپار</label>
+                </div>
+                <button type="submit" class="btn btn-primary">ورود</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Signup modal -->
+      <div class="modal fade" id="signUpModal" 
+      tabindex="-1" role="dialog" aria-labelledby="signUp" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signUp">ثبت نام</h5>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="signupEmail" 
+                   placeholder="ایمیل">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="signupPassword" placeholder="کلمه ی عبور">
+                  <input type="password" class="form-control" id="confirmPassword" placeholder="تکرار کلمه ی عبور">
+                </div>
+                <button type="submit" class="btn btn-primary">ثبت نام</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Intro message -->
       <div class="row">
         <div class="col-12 intro-section top-sharp">
@@ -103,7 +154,7 @@
         </div>
         <div class="small-section right-sharp col-xl-3 col-4">
           <img src="images/images_Looking for Designer.svg" class="img-fluid" 
-          alt="looking for designer" width="180" height="180">
+          alt="looking for designer" width="220" height="220">
         </div>
       </div>
       <!-- Design contests -->
@@ -115,7 +166,7 @@
         </div>
         <div class="small-section right-sharp col-xl-3 col-4">
           <img src="images/images_Contests.svg" class="img-fluid" 
-          alt="contests" width="180" height="180">
+          alt="contests" width="220" height="220">
         </div>
       </div>
       <!-- Projects -->
@@ -127,7 +178,7 @@
         </div>
         <div class="small-section right-sharp col-xl-3 col-4">
           <img src="images/images_Projects.svg" class="img-fluid" 
-          alt="projects" width="180" height="180">
+          alt="projects" width="220" height="220">
         </div>
       </div>
       <!-- Statistics-->
@@ -137,7 +188,7 @@
             <h4> <span class="badge badge-light">3789 پروژه ی انجام شده</span></h4>
             <h4> <span class="badge badge-light">1432 مسابقه ی برگزار شده</span></h4>
             <img src="images/images_Statistics.svg" class="img-fluid align-self-end" 
-            alt="Statistics" width="200" height="200">
+            alt="Statistics" width="220" height="220">
           </div>
         </div>
       <!-- Footer-->

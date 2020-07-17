@@ -17,11 +17,10 @@
 @ligthTertiaryColor : #cccccc;
 @lightquaternaryColor : #e6e6e6;
 
-
 // reusable classes :
 .primary-flex-div {
     display: flex;
-    height: 200px;
+    height: 250px;
     width: auto;
     border-radius: 15px;
 }
@@ -67,6 +66,24 @@
     .vertical-text-flexbox;
     align-items: center;
     background-color: @ligthSecondaryColor;
+}
+.light-text-div {
+    text-align: center;
+    border-radius: 5px;
+    height: 28px;
+    width: 85%;
+    background-color: @lightquaternaryColor;
+    color: @ligthSecondaryColor;
+    font-weight: bold;
+}
+.type-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 85%;
+    height: 80px;
+    background-color: @lightquaternaryColor;
 }
 
 
@@ -139,12 +156,20 @@ h1,h2,h3,h4,h5,h6{
     color: @ligthSecondaryColor;
     font-weight: bold;
 }
+.desktop-menu {
+    justify-content: center;
+}
+.desktop-menu a {
+    color: @ligthSecondaryColor;
+    font-weight: bold;
+}
 .gallary-row {
     justify-content: space-between;
     align-content: space-between;
 }
 .card {
     .primary-flex-div;
+    height: 200px;
     width: 175px;
     align-items: center;
     background-color: @ligthTertiaryColor;
@@ -171,4 +196,17 @@ h1,h2,h3,h4,h5,h6{
 .badge-light {
     background-color: @lightquaternaryColor;
     color: @ligthSecondaryColor;
+}
+.modal-content {
+    .top-sharp;
+    border: none;
+    border-radius: 15px;
+    background-color: @ligthTertiaryColor;
+    color: @ligthPrimaryColor;
+}
+.modal-header {
+    .top-sharp;
+    border: none;
+    background-color: @ligthPrimaryColor;
+    color: @lightquaternaryColor;
 }
