@@ -1,0 +1,153 @@
+// margin variable :
+@marginVar : 20px;
+
+// fonts :
+@font-face {
+    font-family: 'Tehran';
+    src: url('../fonts/BNazanin.eot?#') format('eot'),
+         url('../fonts/BNazanin.woff') format('woff'),
+         url('../fonts/BNazanin.ttf') format('truetype');
+}
+
+// color variables : 
+@primaryColor : #2e0078;
+@secondaryColor : #4e00cc;
+@ligthPrimaryColor : #6e519c;
+@ligthSecondaryColor : #a391bf;
+@ligthTertiaryColor : #cccccc;
+@lightquaternaryColor : #e6e6e6;
+
+
+// reusable classes :
+.primary-flex-div {
+    display: flex;
+    height: 200px;
+    width: auto;
+    border-radius: 15px;
+}
+.vertical-text-flexbox {
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: right;
+}
+.top-sharp {
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+.bottom-sharp {
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.left-sharp {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.right-sharp {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.intro-section {
+    .primary-flex-div;
+    .vertical-text-flexbox;
+    background-color: @ligthPrimaryColor;
+    color: @lightquaternaryColor;
+}
+.big-section {
+    .primary-flex-div;
+    .vertical-text-flexbox;
+    background-color: @ligthTertiaryColor;
+    color: @ligthPrimaryColor;
+}
+.big-section p {
+    margin: 0;
+    color: @ligthSecondaryColor
+}
+.small-section {
+    .primary-flex-div;
+    .vertical-text-flexbox;
+    align-items: center;
+    background-color: @ligthPrimaryColor;
+}
+
+
+body {
+    font-family: 'Tehran';
+    background-color: @lightquaternaryColor;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+}
+.row {
+    margin-top: @marginVar;
+    margin-left: @marginVar/10;
+    margin-right: @marginVar/10;
+}
+.header {
+    display: flex;
+    width: auto;
+    height: 80px;
+    background-color: @ligthTertiaryColor;
+    border-radius: 30px;
+    .bottom-sharp;
+}
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+    height: 80px;
+    background-color: @ligthTertiaryColor;
+    margin-bottom: @marginVar;
+    border-radius: 30px;
+    .top-sharp;
+}
+.navbar {
+    display: flex;
+    width: 100%;
+}
+.navbar-brand {
+    position: relative;
+    justify-self: flex-start;
+    color: @primaryColor !important;
+}
+.avatar {
+    justify-self: flex-end;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-item {
+    margin-left: @marginVar;
+}
+.gallary-row {
+    justify-content: space-between;
+    align-content: space-between;
+}
+.card {
+    .primary-flex-div;
+    width: 175px;
+    align-items: center;
+    background-color: @ligthTertiaryColor;
+    padding: 0;
+    margin: @marginVar/10;
+    margin-bottom: @marginVar/2;
+    border-radius: 15px;
+    border: none;
+}
+.card-img-top {
+    height: 175px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-body {
+    padding: 0;
+}
+.card-title {
+    color: @ligthSecondaryColor;
+}
