@@ -37,7 +37,7 @@
   flex-flow: column wrap;
   justify-content: center;
   text-align: right;
-  background-color: #6e519c;
+  background-color: #a391bf;
   color: #e6e6e6;
 }
 .big-section {
@@ -64,7 +64,7 @@
   justify-content: center;
   text-align: right;
   align-items: center;
-  background-color: #6e519c;
+  background-color: #a391bf;
 }
 body {
   font-family: 'Tehran';
@@ -103,6 +103,13 @@ h6 {
   border-top-right-radius: 0 !important;
   border-top-left-radius: 0 !important;
 }
+.footer a {
+  color: #6e519c;
+  font-weight: bold;
+}
+.footer p {
+  color: #a391bf;
+}
 .navbar {
   display: flex;
   width: 100%;
@@ -127,6 +134,13 @@ h6 {
 }
 .nav-item {
   margin-left: 20px;
+}
+.menu {
+  justify-content: end;
+}
+.menu a {
+  color: #a391bf;
+  font-weight: bold;
 }
 .gallary-row {
   justify-content: space-between;
@@ -154,5 +168,12 @@ h6 {
   padding: 0;
 }
 .card-title {
+  color: #a391bf;
+}
+.badge {
+  border-radius: 5px;
+}
+.badge-light {
+  background-color: #e6e6e6;
   color: #a391bf;
 }
