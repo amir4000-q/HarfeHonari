@@ -67,6 +67,23 @@
     align-items: center;
     background-color: @ligthSecondaryColor;
 }
+.small-section , .big-section {
+    // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+        height: 315px;
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+        height: 315px;
+    }
+}
+.btn , .badge {
+    @media (max-width: 767.98px) {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+}
 .light-text-div {
     text-align: center;
     border-radius: 5px;
@@ -160,8 +177,43 @@ h1,h2,h3,h4,h5,h6{
     justify-content: center;
 }
 .desktop-menu a {
-    color: @ligthSecondaryColor;
+    color: @ligthSecondaryColor !important;
     font-weight: bold;
+}
+.desktop-menu .nav .nav-item .nav-link.active{
+    font-size: x-large;
+}
+.desktop-menu .nav {
+    display: flex;
+    align-items: baseline;
+}
+.btn {
+    border: none;
+    border-radius: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    transition: background-color .3s;
+}
+.btn-primary {
+    background-color: @ligthPrimaryColor !important;
+}
+.btn-primary:hover {
+    background-color: @secondaryColor !important;
+}
+.btn-primary:active , .btn-primary:focus {
+    background-color: @primaryColor !important;
+    box-shadow: none !important;
+}
+.badge {
+    display: flex;
+    border-radius: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    align-items: center;
 }
 .gallary-row {
     justify-content: space-between;
